@@ -22,9 +22,9 @@ def creat_organizations():
 def get_organization_id():
     org_str = get_organizations_list()
     org_list = json.loads(org_str)
-    #name = "Public API Lab"
+    name = "Public API Lab"
     #name = "DeLab"
-    name = str(input("Nhap ten cua organization can chon: "))
+    #name = str(input("Nhap ten cua organization can chon: "))
     for org in org_list:
         if org["name"] == name:
             org_id = org["id"]
